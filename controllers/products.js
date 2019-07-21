@@ -1,7 +1,4 @@
-
-
 const products = require('../data/products')
-
 
 const list = (req, res) => {
   res.json(products)
@@ -16,10 +13,10 @@ const show = (req, res) => {
 
 const create = (req, res) => {
   const newProduct = {
+    _id: products.length +1,
     name: req.body.name,
     description: req.body.description
-    }
-    console.log(newProduct.name);
+  }
     products.push(newProduct)
 }
 
