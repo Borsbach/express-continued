@@ -2,12 +2,6 @@
 
 const products = require('../data/products')
 
-// class Product {
-//     contructor (name, description) {
-//         this.name = name;
-//         this.description = description;
-//     }
-// }
 
 const list = (req, res) => {
   res.json(products)
